@@ -9,7 +9,9 @@
 
 	<modules>
 		<module>Employee</module>
-	</modules>
+		<module>Mission</module>
+        <module>Reward</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>boot_docker</name>
