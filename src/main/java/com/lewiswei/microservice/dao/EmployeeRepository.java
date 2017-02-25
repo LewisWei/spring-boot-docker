@@ -1,7 +1,7 @@
-package com.lewiswei.learn.dao;
+package com.lewiswei.microservice.dao;
 
 
-import com.lewiswei.learn.domain.Employee;
+import com.lewiswei.microservice.domain.Employee;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface EmployeeRepository extends MongoRepository<Employee, String> {

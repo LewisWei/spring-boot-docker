@@ -1,7 +1,7 @@
-package com.lewiswei.learn.controller;
+package com.lewiswei.microservice.controller;
 
-import com.lewiswei.learn.dao.EmployeeRepository;
-import com.lewiswei.learn.domain.Employee;
+import com.lewiswei.microservice.dao.EmployeeRepository;
+import com.lewiswei.microservice.domain.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
