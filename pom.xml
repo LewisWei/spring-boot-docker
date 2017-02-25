@@ -4,9 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lewiswei.microservice</groupId>
-	<artifactId>demo-employee</artifactId>
+	<artifactId>boot-docker</artifactId>
 	<version>1.0</version>
-	<packaging>jar</packaging>
+
+	<modules>
+		<module>Employee</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>boot_docker</name>
 	<description>Demo project for Spring Boot</description>

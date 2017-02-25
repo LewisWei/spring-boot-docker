@@ -1,4 +1,4 @@
-package com.lewiswei.microservice.domain;
+package com.lewiswei.microservice.model;
 
 
 import org.springframework.data.annotation.Id;
