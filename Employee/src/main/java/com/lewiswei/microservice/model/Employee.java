@@ -4,6 +4,9 @@ package com.lewiswei.microservice.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Document(collection = "employees")
 public class Employee {
 
@@ -14,8 +17,13 @@ public class Employee {
     private String fullName;
     private String managerEmail;
 
-    // getters and setters omitted for brevity
+    private int totalPointsEarned;
 
+    private int availablePoints;
+
+    private List<MissionCompletion> completedMissions = new ArrayList<>();
+
+    private List<RewardRedeemed> redeemedRewards = new ArrayList<>();
 
     public String getId() {
         return id;
@@ -47,5 +55,37 @@ public class Employee {
 
     public void setManagerEmail(String managerEmail) {
         this.managerEmail = managerEmail;
+    }
+
+    public int getTotalPointsEarned() {
+        return totalPointsEarned;
+    }
+
+    public void setTotalPointsEarned(int totalPointsEarned) {
+        this.totalPointsEarned = totalPointsEarned;
+    }
+
+    public int getAvailablePoints() {
+        return availablePoints;
+    }
+
+    public void setAvailablePoints(int availablePoints) {
+        this.availablePoints = availablePoints;
+    }
+
+    public List<MissionCompletion> getCompletedMissions() {
+        return completedMissions;
+    }
+
+    public void setCompletedMissions(List<MissionCompletion> completedMissions) {
+        this.completedMissions = completedMissions;
+    }
+
+    public List<RewardRedeemed> getRedeemedRewards() {
+        return redeemedRewards;
+    }
+
+    public void setRedeemedRewards(List<RewardRedeemed> redeemedRewards) {
+        this.redeemedRewards = redeemedRewards;
     }
 }
